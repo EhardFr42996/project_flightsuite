@@ -1,0 +1,9 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MyGlutMouseHandler\n|- m_angle_x\l- m_angle_y\l- m_begin_x\l- m_begin_y\l- m_moving\l- m_tracking\l- m_cg_on\l- m_pos\l- m_chains\l- m_num_chains\l|+ ButtonDown()\l+ ButtonUp()\l+ Motion()\l+ AngleX()\l+ AngleY()\l+ SetChain()\l+ Mouse()\l+ Motion()\l+ AngleX()\l+ AngleY()\l+ Position()\l+ New()\l+ New()\l- MyGlutMouseHandler()\l- MyGlutMouseHandler()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{GlutMouseHandler\n||+ ButtonUp()\l+ ButtonDown()\l+ Motion()\l+ ~GlutMouseHandler()\l+ Mouse()\l+ Motion()\l+ ~GlutMouseHandler()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d42/classGlutMouseHandler.html"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+}

@@ -1,0 +1,12 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{IK_QTask\n|# m_id\l# m_size\l# m_primary\l# m_active\l# m_segment\l# m_weight\l|+ IK_QTask()\l+ ~IK_QTask()\l+ Id()\l+ SetId()\l+ Size()\l+ Primary()\l+ Active()\l+ Weight()\l+ SetWeight()\l+ ComputeJacobian()\l+ Distance()\l+ PositionTask()\l+ Scale()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{IK_QCenterOfMassTask\n|- m_goal_center\l- m_total_mass_inv\l- m_distance\l|+ IK_QCenterOfMassTask()\l+ ComputeJacobian()\l+ Distance()\l+ Scale()\l- ComputeTotalMass()\l- ComputeCenter()\l- JacobianSegment()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d6e/classIK__QCenterOfMassTask.html"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{IK_QOrientationTask\n|- m_goal\l- m_distance\l|+ IK_QOrientationTask()\l+ Distance()\l+ ComputeJacobian()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d72/classIK__QOrientationTask.html"];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node4 [label="{IK_QPositionTask\n|- m_goal\l- m_clamp_length\l|+ IK_QPositionTask()\l+ ComputeJacobian()\l+ Distance()\l+ PositionTask()\l+ Scale()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d8b/classIK__QPositionTask.html"];
+}

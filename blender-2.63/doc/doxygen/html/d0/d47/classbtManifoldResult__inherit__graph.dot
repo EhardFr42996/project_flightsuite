@@ -1,0 +1,12 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{btManifoldResult\n|# m_manifoldPtr\l# m_rootTransA\l# m_rootTransB\l# m_body0\l# m_body1\l# m_partId0\l# m_partId1\l# m_index0\l# m_index1\l|+ btManifoldResult()\l+ btManifoldResult()\l+ ~btManifoldResult()\l+ setPersistentManifold()\l+ getPersistentManifold()\l+ getPersistentManifold()\l+ setShapeIdentifiersA()\l+ setShapeIdentifiersB()\l+ addContactPoint()\l+ refreshContactPoints()\l+ getBody0Internal()\l+ getBody1Internal()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{btDiscreteCollisionDetectorInterface::Result\n||+ ~Result()\l+ setShapeIdentifiersA()\l+ setShapeIdentifiersB()\l+ addContactPoint()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d9c/structbtDiscreteCollisionDetectorInterface_1_1Result.html"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{btBridgedManifoldResult\n|+ m_resultCallback\l|+ btBridgedManifoldResult()\l+ addContactPoint()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/db8/structbtBridgedManifoldResult.html"];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node4 [label="{btPerturbedContactResult\n|+ m_originalManifoldResult\l+ m_transformA\l+ m_transformB\l+ m_unPerturbedTransform\l+ m_perturbA\l+ m_debugDrawer\l|+ btPerturbedContactResult()\l+ ~btPerturbedContactResult()\l+ addContactPoint()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d1e/structbtPerturbedContactResult.html"];
+}

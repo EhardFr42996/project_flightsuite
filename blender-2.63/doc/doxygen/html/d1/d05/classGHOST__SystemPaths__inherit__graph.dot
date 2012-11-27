@@ -1,0 +1,16 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GHOST_SystemPaths\n||+ getSystemDir()\l+ getUserDir()\l+ getBinaryDir()\l+ addToSystemRecentFiles()\l# GHOST_SystemPaths()\l# ~GHOST_SystemPaths()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{GHOST_ISystemPaths\n|- m_systemPaths\l|+ getSystemDir()\l+ getUserDir()\l+ getBinaryDir()\l+ addToSystemRecentFiles()\l+ create()\l+ dispose()\l+ get()\l# GHOST_ISystemPaths()\l# ~GHOST_ISystemPaths()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d8a/classGHOST__ISystemPaths.html"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{GHOST_SystemPathsCarbon\n||+ GHOST_SystemPathsCarbon()\l+ ~GHOST_SystemPathsCarbon()\l+ getSystemDir()\l+ getUserDir()\l+ getBinaryDir()\l+ addToSystemRecentFiles()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d57/classGHOST__SystemPathsCarbon.html"];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node4 [label="{GHOST_SystemPathsCocoa\n||+ GHOST_SystemPathsCocoa()\l+ ~GHOST_SystemPathsCocoa()\l+ getSystemDir()\l+ getUserDir()\l+ getBinaryDir()\l+ addToSystemRecentFiles()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d18/classGHOST__SystemPathsCocoa.html"];
+  Node1 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node5 [label="{GHOST_SystemPathsWin32\n||+ GHOST_SystemPathsWin32()\l+ ~GHOST_SystemPathsWin32()\l+ getSystemDir()\l+ getUserDir()\l+ getBinaryDir()\l+ addToSystemRecentFiles()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d5d/classGHOST__SystemPathsWin32.html"];
+  Node1 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node6 [label="{GHOST_SystemPathsX11\n||+ GHOST_SystemPathsX11()\l+ ~GHOST_SystemPathsX11()\l+ getSystemDir()\l+ getUserDir()\l+ getBinaryDir()\l+ addToSystemRecentFiles()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d51/classGHOST__SystemPathsX11.html"];
+}

@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{KX_BlenderCanvas\n|- m_displayarea\l- m_win\l- m_frame_rect\l- m_area_rect\l- m_area_left\l- m_area_top\l|+ KX_BlenderCanvas()\l+ ~KX_BlenderCanvas()\l+ Init()\l+ SwapBuffers()\l+ ResizeWindow()\l+ BeginFrame()\l+ EndFrame()\l+ ClearColor()\l+ ClearBuffer()\l+ GetWidth()\l+ GetHeight()\l+ GetMouseX()\l+ GetMouseY()\l+ GetMouseNormalizedX()\l+ GetMouseNormalizedY()\l+ GetDisplayArea()\l+ SetDisplayArea()\l+ GetWindowArea()\l+ SetViewPort()\l+ SetMouseState()\l+ SetMousePosition()\l+ MakeScreenShot()\l+ BeginDraw()\l+ EndDraw()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{RAS_ICanvas\n|# m_mousestate\l|+ ~RAS_ICanvas()\l+ Init()\l+ BeginFrame()\l+ EndFrame()\l+ BeginDraw()\l+ EndDraw()\l+ SwapBuffers()\l+ ClearBuffer()\l+ ClearColor()\l+ GetWidth()\l+ GetHeight()\l+ GetMouseX()\l+ GetMouseY()\l+ GetMouseNormalizedX()\l+ GetMouseNormalizedY()\l+ GetDisplayArea()\l+ SetDisplayArea()\l+ GetWindowArea()\l+ SetViewPort()\l+ SetMouseState()\l+ SetMousePosition()\l+ GetMouseState()\l+ MakeScreenShot()\l+ ResizeWindow()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/df6/classRAS__ICanvas.html"];
+}

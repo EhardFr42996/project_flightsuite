@@ -1,0 +1,46 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{AUD_EffectFactory\n|# m_factory\l|+ AUD_EffectFactory()\l+ ~AUD_EffectFactory()\l+ getFactory()\l# getReader()\l- AUD_EffectFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{AUD_IFactory\n||+ ~AUD_IFactory()\l+ createReader()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d97/classAUD__IFactory.html"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{AUD_AccumulatorFactory\n|- m_additive\l|+ AUD_AccumulatorFactory()\l+ createReader()\l+ accumulatorFilterAdditive()\l+ accumulatorFilter()\l- AUD_AccumulatorFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/dda/classAUD__AccumulatorFactory.html"];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node4 [label="{AUD_BandPassFactory\n|- m_low\l- m_high\l|+ AUD_BandPassFactory()\l+ AUD_BandPassFactory()\l+ getLow()\l+ getHigh()\l+ setLow()\l+ setHigh()\l+ createReader()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d66/classAUD__BandPassFactory.html"];
+  Node1 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node5 [label="{AUD_DelayFactory\n|- m_delay\l|+ AUD_DelayFactory()\l+ getDelay()\l+ createReader()\l- AUD_DelayFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d9e/classAUD__DelayFactory.html"];
+  Node1 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node6 [label="{AUD_DynamicIIRFilterFactory\n||+ AUD_DynamicIIRFilterFactory()\l+ createReader()\l+ recalculateCoefficients()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/da7/classAUD__DynamicIIRFilterFactory.html"];
+  Node6 -> Node7 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node7 [label="{AUD_ButterworthFactory\n|- m_frequency\l|+ AUD_ButterworthFactory()\l+ recalculateCoefficients()\l- AUD_ButterworthFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/dd8/classAUD__ButterworthFactory.html"];
+  Node6 -> Node8 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node8 [label="{AUD_HighpassFactory\n|- m_frequency\l- m_Q\l|+ AUD_HighpassFactory()\l+ recalculateCoefficients()\l- AUD_HighpassFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/dee/classAUD__HighpassFactory.html"];
+  Node6 -> Node9 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node9 [label="{AUD_LowpassFactory\n|- m_frequency\l- m_Q\l|+ AUD_LowpassFactory()\l+ recalculateCoefficients()\l- AUD_LowpassFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d9a/classAUD__LowpassFactory.html"];
+  Node1 -> Node10 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node10 [label="{AUD_EnvelopeFactory\n|- m_attack\l- m_release\l- m_threshold\l- m_arthreshold\l|+ AUD_EnvelopeFactory()\l+ createReader()\l+ envelopeFilter()\l+ endEnvelopeFilter()\l- AUD_EnvelopeFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d0f/classAUD__EnvelopeFactory.html"];
+  Node1 -> Node11 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node11 [label="{AUD_FaderFactory\n|- m_type\l- m_start\l- m_length\l|+ AUD_FaderFactory()\l+ getType()\l+ getStart()\l+ getLength()\l+ createReader()\l- AUD_FaderFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dde/classAUD__FaderFactory.html"];
+  Node1 -> Node12 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node12 [label="{AUD_IIRFilterFactory\n|- m_a\l- m_b\l|+ AUD_IIRFilterFactory()\l+ createReader()\l- AUD_IIRFilterFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d26/classAUD__IIRFilterFactory.html"];
+  Node1 -> Node13 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node13 [label="{AUD_LimiterFactory\n|- m_start\l- m_end\l|+ AUD_LimiterFactory()\l+ getStart()\l+ getEnd()\l+ createReader()\l- AUD_LimiterFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d80/classAUD__LimiterFactory.html"];
+  Node1 -> Node14 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node14 [label="{AUD_LoopFactory\n|- m_loop\l|+ AUD_LoopFactory()\l+ getLoop()\l+ createReader()\l- AUD_LoopFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d47/classAUD__LoopFactory.html"];
+  Node1 -> Node15 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node15 [label="{AUD_PingPongFactory\n||+ AUD_PingPongFactory()\l+ createReader()\l- AUD_PingPongFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/dd4/classAUD__PingPongFactory.html"];
+  Node1 -> Node16 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node16 [label="{AUD_PitchFactory\n|- m_pitch\l|+ AUD_PitchFactory()\l+ createReader()\l- AUD_PitchFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d0d/classAUD__PitchFactory.html"];
+  Node1 -> Node17 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node17 [label="{AUD_RectifyFactory\n||+ AUD_RectifyFactory()\l+ createReader()\l+ rectifyFilter()\l- AUD_RectifyFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d3d/classAUD__RectifyFactory.html"];
+  Node1 -> Node18 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node18 [label="{AUD_ReverseFactory\n||+ AUD_ReverseFactory()\l+ createReader()\l- AUD_ReverseFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/dda/classAUD__ReverseFactory.html"];
+  Node1 -> Node19 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node19 [label="{AUD_SquareFactory\n|- m_threshold\l|+ AUD_SquareFactory()\l+ getThreshold()\l+ createReader()\l+ squareFilter()\l+ endSquareFilter()\l- AUD_SquareFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dd3/classAUD__SquareFactory.html"];
+  Node1 -> Node20 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node20 [label="{AUD_SumFactory\n||+ AUD_SumFactory()\l+ createReader()\l- AUD_SumFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d51/classAUD__SumFactory.html"];
+  Node1 -> Node21 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node21 [label="{AUD_VolumeFactory\n|- m_volume\l|+ AUD_VolumeFactory()\l+ getVolume()\l+ createReader()\l- AUD_VolumeFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/db2/classAUD__VolumeFactory.html"];
+}

@@ -1,0 +1,30 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{btDbvt::ICollide\n||+ Process()\l+ Process()\l+ Process()\l+ Descent()\l+ AllLeaves()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{BroadphaseAabbTester\n|+ m_aabbCallback\l|+ BroadphaseAabbTester()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d1c/structBroadphaseAabbTester.html"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{BroadphaseRayTester\n|+ m_rayCallback\l|+ BroadphaseRayTester()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/dcd/structBroadphaseRayTester.html"];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node4 [label="{btCompoundLeafCallback\n|+ m_compoundColObj\l+ m_otherObj\l+ m_dispatcher\l+ m_dispatchInfo\l+ m_resultOut\l+ m_childCollisionAlgorithms\l+ m_sharedManifold\l|+ btCompoundLeafCallback()\l+ ProcessChildShape()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/dd9/structbtCompoundLeafCallback.html"];
+  Node1 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node5 [label="{btDbvtNodeEnumerator\n|+ nodes\l|+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dd4/structbtDbvtNodeEnumerator.html"];
+  Node1 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node6 [label="{btDbvtTreeCollider\n|+ pbp\l+ proxy\l|+ btDbvtTreeCollider()\l+ Process()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d0b/structbtDbvtTreeCollider.html"];
+  Node1 -> Node7 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node7 [label="{btSoftBody::RayFromToCaster\n|+ m_rayFrom\l+ m_rayTo\l+ m_rayNormalizedDirection\l+ m_mint\l+ m_face\l+ m_tests\l|+ RayFromToCaster()\l+ Process()\l+ rayFromToTriangle()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/dcf/structbtSoftBody_1_1RayFromToCaster.html",tooltip="RayFromToCaster takes a ray from, ray to (instead of direction!)"];
+  Node1 -> Node8 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node8 [label="{btSoftColliders::ClusterBase\n|+ erp\l+ idt\l+ m_margin\l+ friction\l+ threshold\l|+ ClusterBase()\l+ SolveContact()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/dfc/structbtSoftColliders_1_1ClusterBase.html"];
+  Node8 -> Node9 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node9 [label="{btSoftColliders::CollideCL_RS\n|+ psb\l+ m_colObj\l|+ Process()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/de3/structbtSoftColliders_1_1CollideCL__RS.html"];
+  Node8 -> Node10 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node10 [label="{btSoftColliders::CollideCL_SS\n|+ bodies\l|+ Process()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/db1/structbtSoftColliders_1_1CollideCL__SS.html"];
+  Node1 -> Node11 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node11 [label="{btSoftColliders::CollideSDF_RS\n|+ psb\l+ m_colObj1\l+ m_rigidBody\l+ dynmargin\l+ stamargin\l|+ Process()\l+ DoNode()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/db1/structbtSoftColliders_1_1CollideSDF__RS.html"];
+  Node1 -> Node12 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node12 [label="{btSoftColliders::CollideVF_SS\n|+ psb\l+ mrg\l|+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d63/structbtSoftColliders_1_1CollideVF__SS.html"];
+  Node1 -> Node13 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node13 [label="{DbvtCullingCallback\n|+ m_clientCallback\l+ m_userData\l+ m_ocb\l|+ DbvtCullingCallback()\l+ Descent()\l+ Process()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/de3/structDbvtCullingCallback.html"];
+}

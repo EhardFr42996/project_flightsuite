@@ -1,0 +1,42 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MEM_NonCopyable\n||# MEM_NonCopyable()\l- MEM_NonCopyable()\l- MEM_NonCopyable()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{BSP_CSGMesh\n|- m_verts\l- m_faces\l- m_edges\l- m_bbox_min\l- m_bbox_max\l|+ SetVertices()\l+ AddPolygon()\l+ AddPolygon()\l+ BuildEdges()\l+ DestroyEdges()\l+ NewCopy()\l+ Invert()\l+ VertexSet()\l+ FaceSet()\l+ EdgeSet()\l+ ~BSP_CSGMesh()\l+ FaceVertices()\l+ FaceEdges()\l+ EdgeVertices()\l+ EdgeFaces()\l+ VertexEdges()\l+ VertexFaces()\l+ FindEdge()\l+ SC_Face()\l+ FacePlane()\l+ ComputeFacePlanes()\l+ CountTriangles()\l+ New()\l- InsertEdge()\l- BSP_CSGMesh()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d09/classBSP__CSGMesh.html"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{CTR_TaggedSetOps\< IndexType, ObjectType \>\n||+ Intersect()\l+ IntersectPair()\l+ Union()\l+ Difference()\l- CTR_TaggedSetOps()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d4a/classCTR__TaggedSetOps.html"];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node4 [label="{CTR_UHeap\< HeapType \>\n|- m_vector\l|+ MakeHeap()\l+ Insert()\l+ HeapVector()\l+ Remove()\l+ Top()\l+ SC_Heap()\l+ ~CTR_UHeap()\l+ New()\l- CTR_UHeap()\l- Swap()\l- Parent()\l- Left()\l- Right()\l- HeapVal()\l- DownHeap()\l- UpHeap()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/dd1/classCTR__UHeap.html"];
+  Node4 -> Node5 [dir=back,color="orange",fontsize="10",style="dashed",label="\< LOD_Edge \>",fontname="Helvetica"];
+  Node5 [label="{CTR_UHeap\< LOD_Edge \>\n|- m_vector\l|+ MakeHeap()\l+ Insert()\l+ HeapVector()\l+ Remove()\l+ Top()\l+ SC_Heap()\l+ ~CTR_UHeap()\l+ New()\l- CTR_UHeap()\l- Swap()\l- Parent()\l- Left()\l- Right()\l- HeapVal()\l- DownHeap()\l- UpHeap()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/dd1/classCTR__UHeap.html"];
+  Node1 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node1 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node6 [label="{GlutDrawManager\n|- m_drawer\l- m_s_instance\l|+ InstallDrawer()\l+ ReleaseDrawer()\l+ ~GlutDrawManager()\l+ InstallDrawer()\l+ ReleaseDrawer()\l+ ~GlutDrawManager()\l+ Instance()\l+ Draw()\l+ Instance()\l+ Draw()\l- GlutDrawManager()\l- GlutDrawManager()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d86/classGlutDrawManager.html"];
+  Node1 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node1 -> Node7 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node7 [label="{GlutKeyboardHandler\n||+ HandleKeyboard()\l+ ~GlutKeyboardHandler()\l+ HandleKeyboard()\l+ ~GlutKeyboardHandler()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d34/classGlutKeyboardHandler.html"];
+  Node7 -> Node8 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node8 [label="{MyGlutKeyHandler\n|- m_info\l|+ HandleKeyboard()\l+ ~MyGlutKeyHandler()\l+ HandleKeyboard()\l+ ~MyGlutKeyHandler()\l+ New()\l+ New()\l- MyGlutKeyHandler()\l- MyGlutKeyHandler()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d45/classMyGlutKeyHandler.html"];
+  Node7 -> Node8 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node1 -> Node7 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node1 -> Node9 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node9 [label="{GlutKeyboardManager\n|- m_handler\l- m_s_instance\l|+ InstallHandler()\l+ ReleaseHandler()\l+ ~GlutKeyboardManager()\l+ InstallHandler()\l+ ReleaseHandler()\l+ ~GlutKeyboardManager()\l+ Instance()\l+ HandleKeyboard()\l+ Instance()\l+ HandleKeyboard()\l- GlutKeyboardManager()\l- GlutKeyboardManager()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/dba/classGlutKeyboardManager.html"];
+  Node1 -> Node9 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node1 -> Node10 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node10 [label="{GlutMouseManager\n|- m_handler\l- m_s_instance\l|+ InstallHandler()\l+ ReleaseHandler()\l+ ~GlutMouseManager()\l+ InstallHandler()\l+ ReleaseHandler()\l+ ~GlutMouseManager()\l+ Instance()\l+ ButtonUp()\l+ ButtonDown()\l+ Motion()\l+ Instance()\l+ Mouse()\l+ Motion()\l- GlutMouseManager()\l- GlutMouseManager()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/dde/classGlutMouseManager.html"];
+  Node1 -> Node10 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node1 -> Node11 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node11 [label="{LOD_DecimationClass\n|+ m_e_decimation_state\l- m_mesh\l- m_decimator\l- m_normals\l- m_extern_editor\l|+ Mesh()\l+ Decimator()\l+ FaceEditor()\l+ New()\l- LOD_DecimationClass()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d3e/classLOD__DecimationClass.html"];
+  Node1 -> Node12 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node12 [label="{LOD_EdgeCollapser\n||+ CollapseEdge()\l+ New()\l- LOD_EdgeCollapser()\l- TJunctionTest()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/dd5/classLOD__EdgeCollapser.html"];
+  Node1 -> Node13 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node13 [label="{LOD_ExternNormalEditor\n|- m_normals\l- m_mesh\l- m_extern_info\l|+ Remove()\l+ Add()\l+ Update()\l+ Normals()\l+ RemoveVertexNormals()\l+ UpdateVertexNormals()\l+ BuildNormals()\l+ New()\l- LOD_ExternNormalEditor()\l- ComputeNormal()\l- ComputeVertexNormal()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/df0/classLOD__ExternNormalEditor.html"];
+  Node1 -> Node14 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node14 [label="{LOD_FaceNormalEditor\n|- m_normals\l- m_vertex_normals\l- m_mesh\l|+ Remove()\l+ Add()\l+ Update()\l+ RemoveVertexNormals()\l+ UpdateVertexNormals()\l+ Normals()\l+ VertexNormals()\l+ BuildNormals()\l+ New()\l- LOD_FaceNormalEditor()\l- ComputeNormal()\l- ComputeVertexNormal()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d4d/classLOD__FaceNormalEditor.html"];
+  Node1 -> Node15 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node15 [label="{LOD_QSDecimator\n|- m_collapser\l- m_heap\l- m_quadric_editor\l- m_is_armed\l- m_mesh\l- m_face_editor\l- m_extern_editor\l- m_deg_faces\l- m_deg_edges\l- m_deg_vertices\l- m_update_faces\l- m_new_edges\l- m_update_vertices\l|+ Arm()\l+ Step()\l+ New()\l- LOD_QSDecimator()\l- CollapseEdge()\l- BuildHeap()\l- UpdateHeap()\l- DeletePrimitives()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/dc2/classLOD__QSDecimator.html"];
+  Node1 -> Node16 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node16 [label="{LOD_QuadricEditor\n|- m_quadrics\l- m_mesh\l|+ Remove()\l+ Update()\l+ Quadrics()\l+ BuildQuadrics()\l+ ComputeEdgeCosts()\l+ TargetVertex()\l+ ~LOD_QuadricEditor()\l+ New()\l- LOD_QuadricEditor()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d5b/classLOD__QuadricEditor.html"];
+}

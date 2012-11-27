@@ -1,0 +1,12 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{btSoftBody::Joint\n|+ m_bodies\l+ m_refs\l+ m_cfm\l+ m_erp\l+ m_split\l+ m_drift\l+ m_sdrift\l+ m_massmatrix\l+ m_delete\l|+ ~Joint()\l+ Joint()\l+ Prepare()\l+ Solve()\l+ Terminate()\l+ Type()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{btSoftBody::AJoint\n|+ m_axis\l+ m_icontrol\l|+ Prepare()\l+ Solve()\l+ Terminate()\l+ Type()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/de4/structbtSoftBody_1_1AJoint.html"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{btSoftBody::CJoint\n|+ m_life\l+ m_maxlife\l+ m_rpos\l+ m_normal\l+ m_friction\l|+ Prepare()\l+ Solve()\l+ Terminate()\l+ Type()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d39/structbtSoftBody_1_1CJoint.html"];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node4 [label="{btSoftBody::LJoint\n|+ m_rpos\l|+ Prepare()\l+ Solve()\l+ Terminate()\l+ Type()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/ddd/structbtSoftBody_1_1LJoint.html"];
+}

@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{IK_QRevoluteSegment\n|- m_axis\l- m_angle\l- m_new_angle\l- m_limit\l- m_min\l- m_max\l|+ IK_QRevoluteSegment()\l+ Axis()\l+ UpdateAngle()\l+ Lock()\l+ UpdateAngleApply()\l+ SetLimit()\l+ SetWeight()\l+ SetBasis()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{IK_QSegment\n|# m_parent\l# m_child\l# m_sibling\l# m_composite\l# m_start\l# m_rest_basis\l# m_basis\l# m_translation\l# m_orig_basis\l# m_orig_translation\l# m_max_extension\l# m_global_start\l# m_global_transform\l# m_num_DoF\l# m_DoF_id\l# m_locked\l# m_translational\l# m_weight\l|+ ~IK_QSegment()\l+ SetTransform()\l+ SetParent()\l+ Child()\l+ Sibling()\l+ Parent()\l+ SetComposite()\l+ Composite()\l+ NumberOfDoF()\l+ DoFId()\l+ SetDoFId()\l+ MaxExtension()\l+ BasisChange()\l+ TranslationChange()\l+ GlobalStart()\l+ GlobalEnd()\l+ GlobalTransform()\l+ Translational()\l+ Locked()\l+ UnLock()\l+ Weight()\l+ ScaleWeight()\l+ UpdateTransform()\l+ Axis()\l+ UpdateAngle()\l+ Lock()\l+ UpdateAngleApply()\l+ SetLimit()\l+ SetWeight()\l+ SetBasis()\l+ PrependBasis()\l+ Reset()\l+ Scale()\l# IK_QSegment()\l# RemoveChild()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/de5/classIK__QSegment.html"];
+}

@@ -1,0 +1,22 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{BsdfNode\n|+ closure\l|+ compile()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{ShaderNode\n|+ inputs\l+ outputs\l+ name\l+ id\l+ bump\l|+ ShaderNode()\l+ ~ShaderNode()\l+ input()\l+ output()\l+ add_input()\l+ add_input()\l+ add_input()\l+ add_output()\l+ clone()\l+ attributes()\l+ compile()\l+ compile()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d79/classShaderNode.html"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{DiffuseBsdfNode\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/dd6/classDiffuseBsdfNode.html"];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node4 [label="{GlassBsdfNode\n|+ distribution\l+ distribution_enum\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d23/classGlassBsdfNode.html"];
+  Node1 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node5 [label="{GlossyBsdfNode\n|+ distribution\l+ distribution_enum\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dd6/classGlossyBsdfNode.html"];
+  Node1 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node6 [label="{TranslucentBsdfNode\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/df7/classTranslucentBsdfNode.html"];
+  Node1 -> Node7 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node7 [label="{TransparentBsdfNode\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d95/classTransparentBsdfNode.html"];
+  Node1 -> Node8 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node8 [label="{VelvetBsdfNode\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d19/classVelvetBsdfNode.html"];
+  Node1 -> Node9 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node9 [label="{WardBsdfNode\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/da5/classWardBsdfNode.html"];
+}

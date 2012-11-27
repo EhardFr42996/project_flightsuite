@@ -1,0 +1,10 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GPC_Canvas\n|# m_width\l# m_height\l# m_displayarea\l# m_banners\l# m_bannersEnabled\l# s_bannerId\l|+ GPC_Canvas()\l+ ~GPC_Canvas()\l+ Resize()\l+ ResizeWindow()\l+ GetWidth()\l+ GetHeight()\l+ GetDisplayArea()\l+ SetDisplayArea()\l+ GetWindowArea()\l+ BeginFrame()\l+ EndFrame()\l+ SetViewPort()\l+ ClearColor()\l+ SetMouseState()\l+ SetMousePosition()\l+ MakeScreenShot()\l+ ClearBuffer()\l+ AddBanner()\l+ DisposeBanner()\l+ DisposeAllBanners()\l+ SetBannerEnabled()\l+ SetBannerDisplayEnabled()\l# DisposeBanner()\l# DrawAllBanners()\l# DrawBanner()\l# PushRenderState()\l# PopRenderState()\l# SetOrthoProjection()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{RAS_ICanvas\n|# m_mousestate\l|+ ~RAS_ICanvas()\l+ Init()\l+ BeginFrame()\l+ EndFrame()\l+ BeginDraw()\l+ EndDraw()\l+ SwapBuffers()\l+ ClearBuffer()\l+ ClearColor()\l+ GetWidth()\l+ GetHeight()\l+ GetMouseX()\l+ GetMouseY()\l+ GetMouseNormalizedX()\l+ GetMouseNormalizedY()\l+ GetDisplayArea()\l+ SetDisplayArea()\l+ GetWindowArea()\l+ SetViewPort()\l+ SetMouseState()\l+ SetMousePosition()\l+ GetMouseState()\l+ MakeScreenShot()\l+ ResizeWindow()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/df6/classRAS__ICanvas.html"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{GPG_Canvas\n|# m_window\l|+ GPG_Canvas()\l+ ~GPG_Canvas()\l+ Init()\l+ SetMousePosition()\l+ SetMouseState()\l+ SwapBuffers()\l+ GetMouseX()\l+ GetMouseY()\l+ GetMouseNormalizedX()\l+ GetMouseNormalizedY()\l+ ResizeWindow()\l+ BeginDraw()\l+ EndDraw()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/dc6/classGPG__Canvas.html"];
+}

@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CUDADevice\n|+ cuDevice\l+ cuContext\l+ cuModule\l+ tex_interp_map\l+ cuDevId\l+ pixel_mem_map\l|+ cuda_device_ptr()\l+ cuda_error_string()\l+ cuda_error()\l+ cuda_error()\l+ cuda_push_context()\l+ cuda_pop_context()\l+ CUDADevice()\l+ ~CUDADevice()\l+ support_device()\l+ compile_kernel()\l+ load_kernels()\l+ mem_alloc()\l+ mem_copy_to()\l+ mem_copy_from()\l+ mem_zero()\l+ mem_free()\l+ const_copy_to()\l+ tex_alloc()\l+ tex_free()\l+ path_trace()\l+ tonemap()\l+ shader()\l+ map_pixels()\l+ unmap_pixels()\l+ pixels_alloc()\l+ pixels_copy_from()\l+ pixels_free()\l+ draw_pixels()\l+ task_add()\l+ task_wait()\l+ task_cancel()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{Device\n|+ device\l+ info\l# background\l# error_msg\l|+ ~Device()\l+ error_message()\l+ mem_alloc()\l+ mem_copy_to()\l+ mem_copy_from()\l+ mem_zero()\l+ mem_free()\l+ const_copy_to()\l+ tex_alloc()\l+ tex_free()\l+ pixels_alloc()\l+ pixels_copy_from()\l+ pixels_free()\l+ osl_memory()\l+ load_kernels()\l+ task_add()\l+ task_wait()\l+ task_cancel()\l+ draw_pixels()\l+ create()\l+ type_from_string()\l+ string_from_type()\l+ available_types()\l+ available_devices()\l# Device()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/da1/structDevice.html"];
+}

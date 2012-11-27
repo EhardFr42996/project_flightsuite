@@ -1,0 +1,19 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="iTaSC::Object",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d27/classiTaSC_1_1Object.html"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="iTaSC::ControlledObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d5b/classiTaSC_1_1ControlledObject.html"];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="iTaSC::Armature",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d24/classiTaSC_1_1Armature.html"];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="iTaSC::UncontrolledObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d77/classiTaSC_1_1UncontrolledObject.html"];
+  Node4 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="iTaSC::FixedObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d14/classiTaSC_1_1FixedObject.html"];
+  Node4 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="iTaSC::MovingFrame",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/dc0/classiTaSC_1_1MovingFrame.html"];
+  Node4 -> Node7 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="iTaSC::WorldObject",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d44/classiTaSC_1_1WorldObject.html"];
+}

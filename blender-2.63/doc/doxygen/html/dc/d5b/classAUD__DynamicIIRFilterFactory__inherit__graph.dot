@@ -1,0 +1,16 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{AUD_DynamicIIRFilterFactory\n||+ AUD_DynamicIIRFilterFactory()\l+ createReader()\l+ recalculateCoefficients()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{AUD_EffectFactory\n|# m_factory\l|+ AUD_EffectFactory()\l+ ~AUD_EffectFactory()\l+ getFactory()\l# getReader()\l- AUD_EffectFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d5e/classAUD__EffectFactory.html"];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{AUD_IFactory\n||+ ~AUD_IFactory()\l+ createReader()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d97/classAUD__IFactory.html"];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node4 [label="{AUD_ButterworthFactory\n|- m_frequency\l|+ AUD_ButterworthFactory()\l+ recalculateCoefficients()\l- AUD_ButterworthFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/dd8/classAUD__ButterworthFactory.html"];
+  Node1 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node5 [label="{AUD_HighpassFactory\n|- m_frequency\l- m_Q\l|+ AUD_HighpassFactory()\l+ recalculateCoefficients()\l- AUD_HighpassFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/dee/classAUD__HighpassFactory.html"];
+  Node1 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node6 [label="{AUD_LowpassFactory\n|- m_frequency\l- m_Q\l|+ AUD_LowpassFactory()\l+ recalculateCoefficients()\l- AUD_LowpassFactory()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d9a/classAUD__LowpassFactory.html"];
+}

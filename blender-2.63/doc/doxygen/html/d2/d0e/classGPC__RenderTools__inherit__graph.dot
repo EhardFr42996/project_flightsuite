@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GPC_RenderTools\n|- m_lastlightlayer\l- m_lastlighting\l- m_lastauxinfo\l- m_numgllights\l|+ GPC_RenderTools()\l+ ~GPC_RenderTools()\l+ EndFrame()\l+ BeginFrame()\l+ EnableOpenGLLights()\l+ DisableOpenGLLights()\l+ ProcessLighting()\l+ RenderText3D()\l+ RenderText2D()\l+ RenderText()\l+ applyTransform()\l+ applyLights()\l+ PushMatrix()\l+ PopMatrix()\l+ RayHit()\l+ NeedRayCast()\l+ MotionBlur()\l+ SetClientObject()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{RAS_IRenderTools\n|# m_clientobject\l# m_auxilaryClientInfo\l# m_lights\l# m_filtermanager\l|+ RAS_IRenderTools()\l+ ~RAS_IRenderTools()\l+ BeginFrame()\l+ EndFrame()\l+ applyTransform()\l+ RenderText3D()\l+ RenderText2D()\l+ RenderText()\l+ ProcessLighting()\l+ SetClientObject()\l+ SetAuxilaryClientInfo()\l+ PushMatrix()\l+ PopMatrix()\l+ AddLight()\l+ RemoveLight()\l+ MotionBlur()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d53/classRAS__IRenderTools.html"];
+}

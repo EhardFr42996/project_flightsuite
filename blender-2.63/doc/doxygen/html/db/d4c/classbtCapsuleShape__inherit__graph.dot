@@ -1,0 +1,12 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{btCapsuleShape\n|# m_upAxis\l|+ btCapsuleShape()\l+ calculateLocalInertia()\l+ localGetSupportingVertexWithoutMargin()\l+ batchedUnitVectorGetSupportingVertexWithoutMargin()\l+ setMargin()\l+ getAabb()\l+ getName()\l+ getUpAxis()\l+ getRadius()\l+ getHalfHeight()\l+ setLocalScaling()\l+ calculateSerializeBufferSize()\l+ serialize()\l# btCapsuleShape()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{btConvexInternalShape\n|# m_localScaling\l# m_implicitShapeDimensions\l# m_collisionMargin\l# m_padding\l|+ ~btConvexInternalShape()\l+ localGetSupportingVertex()\l+ getImplicitShapeDimensions()\l+ setImplicitShapeDimensions()\l+ getAabb()\l+ getAabbSlow()\l+ setLocalScaling()\l+ getLocalScaling()\l+ getLocalScalingNV()\l+ setMargin()\l+ getMargin()\l+ getMarginNV()\l+ getNumPreferredPenetrationDirections()\l+ getPreferredPenetrationDirection()\l+ calculateSerializeBufferSize()\l+ serialize()\l# btConvexInternalShape()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d1a/classbtConvexInternalShape.html",tooltip="The btConvexInternalShape is an internal base class, shared by most convex shape implementations."];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{btCapsuleShapeX\n||+ btCapsuleShapeX()\l+ getName()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/db8/classbtCapsuleShapeX.html"];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node4 [label="{btCapsuleShapeZ\n||+ btCapsuleShapeZ()\l+ getName()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d0e/classbtCapsuleShapeZ.html"];
+}

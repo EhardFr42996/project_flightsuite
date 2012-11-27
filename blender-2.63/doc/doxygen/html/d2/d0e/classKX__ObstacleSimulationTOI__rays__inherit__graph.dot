@@ -1,0 +1,10 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{KX_ObstacleSimulationTOI_rays\n||+ KX_ObstacleSimulationTOI_rays()\l# sampleRVO()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{KX_ObstacleSimulationTOI\n|# m_maxSamples\l# m_minToi\l# m_maxToi\l# m_velWeight\l# m_curVelWeight\l# m_toiWeight\l# m_collisionWeight\l|+ KX_ObstacleSimulationTOI()\l+ AdjustObstacleVelocity()\l# sampleRVO()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/dd2/classKX__ObstacleSimulationTOI.html"];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{KX_ObstacleSimulation\n|# m_obstacles\l# m_levelHeight\l# m_enableVisualization\l|+ KX_ObstacleSimulation()\l+ ~KX_ObstacleSimulation()\l+ DrawObstacles()\l+ AddObstacleForObj()\l+ DestroyObstacleForObj()\l+ AddObstaclesForNavMesh()\l+ GetObstacle()\l+ UpdateObstacles()\l+ AdjustObstacleVelocity()\l# CreateObstacle()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d8d/classKX__ObstacleSimulation.html"];
+}

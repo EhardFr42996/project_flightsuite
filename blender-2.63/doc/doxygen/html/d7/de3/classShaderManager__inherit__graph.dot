@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{ShaderManager\n|+ need_update\l# unique_attribute_id\l|+ ~ShaderManager()\l+ device_update()\l+ device_free()\l+ device_update_common()\l+ device_free_common()\l+ get_attribute_id()\l+ get_attribute_id()\l+ get_shader_id()\l+ create()\l+ add_default()\l# ShaderManager()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{SVMShaderManager\n||+ SVMShaderManager()\l+ ~SVMShaderManager()\l+ device_update()\l+ device_free()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/ddb/classSVMShaderManager.html"];
+}

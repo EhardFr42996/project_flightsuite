@@ -1,0 +1,39 @@
+digraph structs
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node10 [label="mikktspace",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d15/group__mikktspace.html"];
+  Node3 [label="container",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d1b/group__ctr.html"];
+  Node12 [label="opennl",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dc0/group__opennl.html"];
+  Node7 [label="iksolver",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d69/group__iksolver.html"];
+  Node16 [label="GHOST API",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d2b/group__GHOST.html"];
+  Node14 [label="string",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/db0/group__string.html"];
+  Node8 [label="itasc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d38/group__itasc.html"];
+  Node2 [label="boolop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d45/group__boolop.html"];
+  Node5 [label="elbeem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/da9/group__elbeem.html"];
+  Node4 [label="decimation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d6d/group__decimation.html"];
+  Node0 [label="Internal libraries",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node9 [label="memutil",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/db0/group__memutil.html"];
+  Node11 [label="moto",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d1e/group__moto.html"];
+  Node1 [label="Guarded memory (de)allocation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d61/group__MEM.html"];
+  Node6 [label="bsp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dfe/group__bsp.html"];
+  Node15 [label="Audaspace",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d62/group__audaspace.html"];
+  Node13 [label="smoke",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d9e/group__smoke.html"];
+  Node0->Node1 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node12 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node13 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node14 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node15 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node16 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+}

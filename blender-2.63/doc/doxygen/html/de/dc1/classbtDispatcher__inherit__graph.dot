@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{btDispatcher\n||+ ~btDispatcher()\l+ findAlgorithm()\l+ getNewManifold()\l+ releaseManifold()\l+ clearManifold()\l+ needsCollision()\l+ needsResponse()\l+ dispatchAllCollisionPairs()\l+ getNumManifolds()\l+ getManifoldByIndexInternal()\l+ getInternalManifoldPointer()\l+ allocateCollisionAlgorithm()\l+ freeCollisionAlgorithm()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{btCollisionDispatcher\n|# m_dispatcherFlags\l# m_manifoldsPtr\l# m_defaultManifoldResult\l# m_nearCallback\l# m_collisionAlgorithmPoolAllocator\l# m_persistentManifoldPoolAllocator\l# m_doubleDispatch\l# m_collisionConfiguration\l|+ getDispatcherFlags()\l+ setDispatcherFlags()\l+ registerCollisionCreateFunc()\l+ getNumManifolds()\l+ getInternalManifoldPointer()\l+ getManifoldByIndexInternal()\l+ getManifoldByIndexInternal()\l+ btCollisionDispatcher()\l+ ~btCollisionDispatcher()\l+ getNewManifold()\l+ releaseManifold()\l+ clearManifold()\l+ findAlgorithm()\l+ needsCollision()\l+ needsResponse()\l+ dispatchAllCollisionPairs()\l+ setNearCallback()\l+ getNearCallback()\l+ allocateCollisionAlgorithm()\l+ freeCollisionAlgorithm()\l+ getCollisionConfiguration()\l+ getCollisionConfiguration()\l+ setCollisionConfiguration()\l+ defaultNearCallback()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d4e/classbtCollisionDispatcher.html"];
+}

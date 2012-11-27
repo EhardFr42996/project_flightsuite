@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{KX_IScalarInterpolator\n||+ ~KX_IScalarInterpolator()\l+ GetValue()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{BL_ScalarInterpolator\n|- m_fcu\l|+ BL_ScalarInterpolator()\l+ BL_ScalarInterpolator()\l+ ~BL_ScalarInterpolator()\l+ GetValue()\l+ GetFCurve()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/dff/classBL__ScalarInterpolator.html"];
+}

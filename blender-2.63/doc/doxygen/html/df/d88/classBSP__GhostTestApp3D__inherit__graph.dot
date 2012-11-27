@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{BSP_GhostTestApp3D\n|- m_window\l- m_system\l- m_finish_me_off\l- m_meshes\l- m_rotation_settings\l- m_translation_settings\l- m_scale_settings\l- m_render_modes\l- m_current_object\l|+ BSP_GhostTestApp3D()\l+ InitApp()\l+ Run()\l+ ~BSP_GhostTestApp3D()\l+ SetMesh()\l- GetTransform()\l- Operate()\l- Swap()\l- DrawPolies()\l- UpdateFrame()\l- UnProject()\l- InitOpenGl()\l- processEvent()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{GHOST_IEventConsumer\n||+ ~GHOST_IEventConsumer()\l+ processEvent()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d83/classGHOST__IEventConsumer.html"];
+}

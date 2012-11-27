@@ -1,0 +1,43 @@
+digraph structs
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node10 [label="GPU",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d33/group__gpu.html"];
+  Node13 [label="RNA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dca/group__RNA.html"];
+  Node17 [label="Editors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d20/group__editors.html"];
+  Node9 [label="modifiers",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d93/group__modifiers.html"];
+  Node1 [label="Rendering",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/dfe/group__render.html"];
+  Node18 [label="IMage Buffer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/dc7/group__imbuf.html"];
+  Node14 [label=".blend read and write functions",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d18/group__blenloader.html"];
+  Node3 [label="Python",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d69/group__python.html"];
+  Node2 [label="BMesh",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d44/group__bmesh.html",tooltip="BMesh is a non-manifold boundary representation designed to replace the current, limited EditMesh str..."];
+  Node8 [label="nodes",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d58/group__nodes.html"];
+  Node12 [label="sDNA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d94/group__DNA.html"];
+  Node15 [label="quicktime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d74/group__quicktime.html"];
+  Node6 [label="blenkernel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/df0/group__bke.html"];
+  Node4 [label="Blender pluginapi",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d2a/group__blpluginapi.html"];
+  Node5 [label="blenfont",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d88/group__blf.html"];
+  Node7 [label="blenlib",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/db3/group__bli.html"];
+  Node0 [label="blender",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node11 [label="ikplugin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d1a/group__ikplugin.html"];
+  Node16 [label="windowmanager",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/daa/group__wm.html"];
+  Node0->Node1 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node2 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node3 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node4 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node5 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node6 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node7 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node8 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node9 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node10 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node11 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node12 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node13 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node14 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node15 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node16 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node17 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+  Node0->Node18 [shape=plaintext, color="midnightblue", dir="back", style="solid"];
+}

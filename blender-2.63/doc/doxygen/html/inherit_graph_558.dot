@@ -1,0 +1,7 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="btQuaternion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d33/classbtQuaternion.html",tooltip="The btQuaternion implements quaternion to perform linear algebra rotations in combination with btMatr..."];
+}

@@ -1,0 +1,10 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{EdgeDice\n|+ camera\l+ mesh\l+ mesh_P\l+ mesh_N\l+ dicing_rate\l+ vert_offset\l+ tri_offset\l+ shader\l+ smooth\l|+ EdgeDice()\l+ reserve()\l+ add_vert()\l+ add_triangle()\l+ stitch_triangles()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{QuadDice\n||+ QuadDice()\l+ reserve()\l+ eval_projected()\l+ map_uv()\l+ add_vert()\l+ add_corners()\l+ add_grid()\l+ add_side_u()\l+ add_side_v()\l+ quad_area()\l+ scale_factor()\l+ dice()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d3f/classQuadDice.html"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{TriangleDice\n||+ TriangleDice()\l+ reserve()\l+ map_uv()\l+ add_vert()\l+ add_grid()\l+ dice()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d2f/classTriangleDice.html"];
+}

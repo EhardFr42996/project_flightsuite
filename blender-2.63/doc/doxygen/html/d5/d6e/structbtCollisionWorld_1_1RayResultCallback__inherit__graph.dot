@@ -1,0 +1,16 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{btCollisionWorld::RayResultCallback\n|+ m_closestHitFraction\l+ m_collisionObject\l+ m_collisionFilterGroup\l+ m_collisionFilterMask\l+ m_flags\l|+ ~RayResultCallback()\l+ hasHit()\l+ RayResultCallback()\l+ needsCollision()\l+ addSingleResult()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{btCollisionWorld::AllHitsRayResultCallback\n|+ m_collisionObjects\l+ m_rayFromWorld\l+ m_rayToWorld\l+ m_hitNormalWorld\l+ m_hitPointWorld\l+ m_hitFractions\l|+ AllHitsRayResultCallback()\l+ addSingleResult()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/de2/structbtCollisionWorld_1_1AllHitsRayResultCallback.html"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{btCollisionWorld::ClosestRayResultCallback\n|+ m_rayFromWorld\l+ m_rayToWorld\l+ m_hitNormalWorld\l+ m_hitPointWorld\l|+ ClosestRayResultCallback()\l+ addSingleResult()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/dbe/structbtCollisionWorld_1_1ClosestRayResultCallback.html"];
+  Node3 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node4 [label="{btKinematicClosestNotMeRayResultCallback\n|# m_me\l|+ btKinematicClosestNotMeRayResultCallback()\l+ addSingleResult()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d17/classbtKinematicClosestNotMeRayResultCallback.html"];
+  Node3 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node5 [label="{ClosestRayResultCallbackNotMe\n|- m_owner\l- m_parent\l|+ ClosestRayResultCallbackNotMe()\l+ needsCollision()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d6b/classClosestRayResultCallbackNotMe.html"];
+  Node3 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node6 [label="{FilterClosestRayResultCallback\n|+ m_phyRayFilter\l+ m_hitTriangleShape\l+ m_hitTriangleIndex\l|+ FilterClosestRayResultCallback()\l+ ~FilterClosestRayResultCallback()\l+ needsCollision()\l+ addSingleResult()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d13/structFilterClosestRayResultCallback.html"];
+}

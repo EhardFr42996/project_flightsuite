@@ -1,0 +1,17 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="RAS_Deformer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dc3/classRAS__Deformer.html"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="BL_MeshDeformer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/dc5/classBL__MeshDeformer.html"];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="BL_SkinDeformer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d80/classBL__SkinDeformer.html"];
+  Node3 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="BL_ShapeDeformer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d12/classBL__ShapeDeformer.html"];
+  Node4 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="BL_ModifierDeformer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/dbf/classBL__ModifierDeformer.html"];
+  Node1 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="KX_SoftBodyDeformer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d77/classKX__SoftBodyDeformer.html"];
+}

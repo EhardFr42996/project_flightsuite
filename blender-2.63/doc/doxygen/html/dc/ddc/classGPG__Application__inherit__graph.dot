@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{GPG_Application\n|# m_exitkey\l# m_startSceneName\l# m_startScene\l# m_maggie\l# m_exitRequested\l# m_exitString\l# m_globalSettings\l# m_system\l# m_mainWindow\l# m_frameTimer\l# m_cursor\l# m_engineInitialized\l# m_engineRunning\l# m_isEmbedded\l# m_ketsjiengine\l# m_kxsystem\l# m_keyboard\l# m_mouse\l# m_canvas\l# m_rendertools\l# m_rasterizer\l# m_sceneconverter\l# m_networkdevice\l# m_blendermat\l# m_blenderglslmat\l# m_pyGlobalDictString\l# m_pyGlobalDictString_Length\l# m_argc\l# m_argv\l|+ GPG_Application()\l+ ~GPG_Application()\l+ SetGameEngineData()\l+ startWindow()\l+ startFullScreen()\l+ startEmbeddedWindow()\l+ processEvent()\l+ getExitRequested()\l+ getExitString()\l+ getGlobalSettings()\l+ StartGameEngine()\l+ StopGameEngine()\l# handleWheel()\l# handleButton()\l# handleCursorMove()\l# handleKey()\l# initEngine()\l# startEngine()\l# stopEngine()\l# exitEngine()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{GHOST_IEventConsumer\n||+ ~GHOST_IEventConsumer()\l+ processEvent()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d83/classGHOST__IEventConsumer.html"];
+}

@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{btGjkPairDetector\n|+ m_lastUsedMethod\l+ m_curIter\l+ m_degenerateSimplex\l+ m_catchDegeneracies\l- m_cachedSeparatingAxis\l- m_penetrationDepthSolver\l- m_simplexSolver\l- m_minkowskiA\l- m_minkowskiB\l- m_shapeTypeA\l- m_shapeTypeB\l- m_marginA\l- m_marginB\l- m_ignoreMargin\l- m_cachedSeparatingDistance\l|+ btGjkPairDetector()\l+ btGjkPairDetector()\l+ ~btGjkPairDetector()\l+ getClosestPoints()\l+ getClosestPointsNonVirtual()\l+ setMinkowskiA()\l+ setMinkowskiB()\l+ setCachedSeperatingAxis()\l+ getCachedSeparatingAxis()\l+ getCachedSeparatingDistance()\l+ setPenetrationDepthSolver()\l+ setIgnoreMargin()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{btDiscreteCollisionDetectorInterface\n||+ ~btDiscreteCollisionDetectorInterface()\l+ getClosestPoints()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/dbb/structbtDiscreteCollisionDetectorInterface.html"];
+}

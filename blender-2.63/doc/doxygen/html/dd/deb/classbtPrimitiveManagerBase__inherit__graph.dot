@@ -1,0 +1,10 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{btPrimitiveManagerBase\n||+ ~btPrimitiveManagerBase()\l+ is_trimesh()\l+ get_primitive_count()\l+ get_primitive_box()\l+ get_primitive_triangle()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{btGImpactCompoundShape::CompoundPrimitiveManager\n|+ m_compoundShape\l|+ ~CompoundPrimitiveManager()\l+ CompoundPrimitiveManager()\l+ CompoundPrimitiveManager()\l+ CompoundPrimitiveManager()\l+ is_trimesh()\l+ get_primitive_count()\l+ get_primitive_box()\l+ get_primitive_triangle()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/de1/classbtGImpactCompoundShape_1_1CompoundPrimitiveManager.html",tooltip="compound primitive manager"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{btGImpactMeshShapePart::TrimeshPrimitiveManager\n|+ m_margin\l+ m_meshInterface\l+ m_scale\l+ m_part\l+ m_lock_count\l+ vertexbase\l+ numverts\l+ type\l+ stride\l+ indexbase\l+ indexstride\l+ numfaces\l+ indicestype\l|+ TrimeshPrimitiveManager()\l+ TrimeshPrimitiveManager()\l+ TrimeshPrimitiveManager()\l+ ~TrimeshPrimitiveManager()\l+ lock()\l+ unlock()\l+ is_trimesh()\l+ get_primitive_count()\l+ get_vertex_count()\l+ get_indices()\l+ get_vertex()\l+ get_primitive_box()\l+ get_primitive_triangle()\l+ get_bullet_triangle()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/ddb/classbtGImpactMeshShapePart_1_1TrimeshPrimitiveManager.html",tooltip="Trimesh primitive manager."];
+}

@@ -1,0 +1,21 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir=LR;
+  Node1 [label="GHOST_ISystem",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/db3/classGHOST__ISystem.html"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="GHOST_System",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d6d/classGHOST__System.html"];
+  Node2 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="GHOST_SystemCarbon",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dd9/classGHOST__SystemCarbon.html"];
+  Node2 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="GHOST_SystemCocoa",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d16/classGHOST__SystemCocoa.html"];
+  Node2 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="GHOST_SystemNULL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d33/classGHOST__SystemNULL.html"];
+  Node2 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="GHOST_SystemSDL",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/df7/classGHOST__SystemSDL.html"];
+  Node2 -> Node7 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="GHOST_SystemWin32",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d71/classGHOST__SystemWin32.html"];
+  Node2 -> Node8 [dir=back,color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="GHOST_SystemX11",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/dd2/classGHOST__SystemX11.html"];
+}

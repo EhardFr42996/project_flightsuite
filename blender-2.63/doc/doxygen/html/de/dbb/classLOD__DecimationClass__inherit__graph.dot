@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{LOD_DecimationClass\n|+ m_e_decimation_state\l- m_mesh\l- m_decimator\l- m_normals\l- m_extern_editor\l|+ Mesh()\l+ Decimator()\l+ FaceEditor()\l+ New()\l- LOD_DecimationClass()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{MEM_NonCopyable\n||# MEM_NonCopyable()\l- MEM_NonCopyable()\l- MEM_NonCopyable()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d40/classMEM__NonCopyable.html"];
+}

@@ -1,0 +1,16 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{CExpression\n|# m_refcount\l|+ MergeExpression()\l+ CExpression()\l+ Calculate()\l+ GetExpressionID()\l+ NeedsRecalculated()\l+ CheckLink()\l+ ClearModified()\l+ BroadcastOperators()\l+ AddRef()\l+ Release()\l# ~CExpression()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{CConstExpr\n|- m_value\l|+ MergeExpression()\l+ BroadcastOperators()\l+ GetExpressionID()\l+ CheckLink()\l+ NeedsRecalculated()\l+ ClearModified()\l+ GetNumber()\l+ Calculate()\l+ CConstExpr()\l+ CConstExpr()\l+ ~CConstExpr()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d53/classCConstExpr.html"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{CIdentifierExpr\n|- m_idContext\l- m_identifier\l|+ CIdentifierExpr()\l+ ~CIdentifierExpr()\l+ Calculate()\l+ MergeExpression()\l+ GetExpressionID()\l+ NeedsRecalculated()\l+ CheckLink()\l+ ClearModified()\l+ BroadcastOperators()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/dae/classCIdentifierExpr.html"];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node4 [label="{CIfExpr\n|- m_guard\l- m_e1\l- m_e2\l|+ MergeExpression()\l+ CIfExpr()\l+ CIfExpr()\l+ GetExpressionID()\l+ ~CIfExpr()\l+ Calculate()\l+ IsInside()\l+ NeedsRecalculated()\l+ CheckLink()\l+ ClearModified()\l+ BroadcastOperators()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d3e/classCIfExpr.html"];
+  Node1 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node5 [label="{COperator1Expr\n|- m_op\l- m_lhs\l|+ MergeExpression()\l+ BroadcastOperators()\l+ GetExpressionID()\l+ CheckLink()\l+ NeedsRecalculated()\l+ ClearModified()\l+ Calculate()\l+ COperator1Expr()\l+ COperator1Expr()\l+ ~COperator1Expr()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d62/classCOperator1Expr.html"];
+  Node1 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node6 [label="{COperator2Expr\n|# m_rhs\l# m_lhs\l# m_cached_calculate\l- m_op\l|+ MergeExpression()\l+ GetExpressionID()\l+ BroadcastOperators()\l+ CheckLink()\l+ NeedsRecalculated()\l+ ClearModified()\l+ Calculate()\l+ COperator2Expr()\l+ COperator2Expr()\l+ ~COperator2Expr()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/db5/classCOperator2Expr.html"];
+}

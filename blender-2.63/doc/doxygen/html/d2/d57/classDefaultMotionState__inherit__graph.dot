@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{DefaultMotionState\n|+ m_worldTransform\l+ m_localScaling\l|+ DefaultMotionState()\l+ ~DefaultMotionState()\l+ getWorldPosition()\l+ getWorldScaling()\l+ getWorldOrientation()\l+ setWorldPosition()\l+ setWorldOrientation()\l+ getWorldOrientation()\l+ setWorldOrientation()\l+ calculateWorldTransformations()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{PHY_IMotionState\n||+ ~PHY_IMotionState()\l+ getWorldPosition()\l+ getWorldScaling()\l+ getWorldOrientation()\l+ getWorldOrientation()\l+ setWorldOrientation()\l+ setWorldPosition()\l+ setWorldOrientation()\l+ calculateWorldTransformations()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d52/classPHY__IMotionState.html"];
+}

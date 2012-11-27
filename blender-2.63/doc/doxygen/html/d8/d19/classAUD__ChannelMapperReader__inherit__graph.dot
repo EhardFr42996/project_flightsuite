@@ -1,0 +1,10 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{AUD_ChannelMapperReader\n|- m_buffer\l- m_target_channels\l- m_source_channels\l- m_mapping\l- m_map_size\l- m_mono_angle\l- MONO_MAP\l- STEREO_MAP\l- STEREO_LFE_MAP\l- SURROUND4_MAP\l- SURROUND5_MAP\l- SURROUND51_MAP\l- SURROUND61_MAP\l- SURROUND71_MAP\l- CHANNEL_MAPS\l- MONO_ANGLES\l- STEREO_ANGLES\l- STEREO_LFE_ANGLES\l- SURROUND4_ANGLES\l- SURROUND5_ANGLES\l- SURROUND51_ANGLES\l- SURROUND61_ANGLES\l- SURROUND71_ANGLES\l- CHANNEL_ANGLES\l|+ AUD_ChannelMapperReader()\l+ ~AUD_ChannelMapperReader()\l+ setChannels()\l+ setMonoAngle()\l+ getSpecs()\l+ read()\l- AUD_ChannelMapperReader()\l- operator=()\l- calculateMapping()\l- angleDistance()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{AUD_EffectReader\n|# m_reader\l|+ AUD_EffectReader()\l+ ~AUD_EffectReader()\l+ isSeekable()\l+ seek()\l+ getLength()\l+ getPosition()\l+ getSpecs()\l+ read()\l- AUD_EffectReader()\l- operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d5c/classAUD__EffectReader.html"];
+  Node3 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{AUD_IReader\n||+ ~AUD_IReader()\l+ isSeekable()\l+ seek()\l+ getLength()\l+ getPosition()\l+ getSpecs()\l+ read()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d2b/classAUD__IReader.html"];
+}

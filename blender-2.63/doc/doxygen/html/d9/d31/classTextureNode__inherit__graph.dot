@@ -1,0 +1,28 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{TextureNode\n|+ tex_mapping\l|+ TextureNode()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{ShaderNode\n|+ inputs\l+ outputs\l+ name\l+ id\l+ bump\l|+ ShaderNode()\l+ ~ShaderNode()\l+ input()\l+ output()\l+ add_input()\l+ add_input()\l+ add_input()\l+ add_output()\l+ clone()\l+ attributes()\l+ compile()\l+ compile()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d79/classShaderNode.html"];
+  Node1 -> Node3 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node3 [label="{CheckerTextureNode\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d11/classCheckerTextureNode.html"];
+  Node1 -> Node4 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node4 [label="{EnvironmentTextureNode\n|+ image_manager\l+ slot\l+ is_float\l+ filename\l+ color_space\l+ projection\l+ color_space_enum\l+ projection_enum\l|+ ~EnvironmentTextureNode()\l+ clone()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d10/classEnvironmentTextureNode.html"];
+  Node1 -> Node5 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node5 [label="{GradientTextureNode\n|+ type\l+ type_enum\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d51/classGradientTextureNode.html"];
+  Node1 -> Node6 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node6 [label="{ImageTextureNode\n|+ image_manager\l+ slot\l+ is_float\l+ filename\l+ color_space\l+ color_space_enum\l|+ ~ImageTextureNode()\l+ clone()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d17/classImageTextureNode.html"];
+  Node1 -> Node7 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node7 [label="{MagicTextureNode\n|+ depth\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d2d/classMagicTextureNode.html"];
+  Node1 -> Node8 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node8 [label="{MusgraveTextureNode\n|+ type\l+ type_enum\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/dce/classMusgraveTextureNode.html"];
+  Node1 -> Node9 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node9 [label="{NoiseTextureNode\n||}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dd/d55/classNoiseTextureNode.html"];
+  Node1 -> Node10 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node10 [label="{SkyTextureNode\n|+ sun_direction\l+ turbidity\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d68/classSkyTextureNode.html"];
+  Node1 -> Node11 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node11 [label="{VoronoiTextureNode\n|+ coloring\l+ coloring_enum\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d07/classVoronoiTextureNode.html"];
+  Node1 -> Node12 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node12 [label="{WaveTextureNode\n|+ type\l+ type_enum\l|}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/de7/classWaveTextureNode.html"];
+}

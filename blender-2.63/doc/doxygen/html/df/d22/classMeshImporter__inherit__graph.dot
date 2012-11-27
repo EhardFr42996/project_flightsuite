@@ -1,0 +1,8 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MeshImporter\n|- unitconverter\l- scene\l- armature_importer\l- uid_mesh_map\l- uid_object_map\l- geom_uid_mat_mapping_map\l- materials_mapped_to_geom\l|+ MeshImporter()\l+ get_object_by_geom_uid()\l+ assign_textures_to_uvlayer()\l+ assign_material_to_geom()\l+ create_mesh_object()\l+ write_geometry()\l- set_face_indices()\l- set_face_uv()\l- set_face_uv()\l- is_nice_mesh()\l- read_vertices()\l- triangulate_poly()\l- count_new_tris()\l- read_faces()\l- get_vector()\l- flat_face()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
+  Node2 [label="{MeshImporterBase\n||+ get_object_by_geom_uid()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/de7/classMeshImporterBase.html"];
+}
