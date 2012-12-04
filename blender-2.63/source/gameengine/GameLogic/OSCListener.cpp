@@ -56,24 +56,9 @@ const osc::ReceivedMessage *BlenderOSCPacketListener::getMessage()
 
 void BlenderOSCPacketListener::ProcessMessage( const osc::ReceivedMessage& m, const IpEndpointName& remoteEndpoint )
 {
-	try{
-		if( std::strcmp( m.AddressPattern(), "/color" ) == 0 ){
-         m_mutex.lock();
-         if (m_newMessageFlag) delete m_message; //overwrite old message
-         m_message = new osc::ReceivedMessage(m); 
-         m_newMessageFlag = true;
-         m_mutex.unlock();
-         /*
-			osc::ReceivedMessage::const_iterator arg = m.ArgumentsBegin();
-			int a1 = (arg++)->AsInt32();
-			if( arg != m.ArgumentsEnd() )
-				throw osc::ExcessArgumentException();
-
-			std::cout << "received '/color' message with arguments: " << a1 << "\n";
-         */
-		}
-	}catch( osc::Exception& e ){
-		std::cout << "error while parsing message: "
-			<< m.AddressPattern() << ": " << e.what() << "\n";
-	}
+   m_mutex.lock();
+   if (m_newMessageFlag) delete m_message; //overwrite old message
+   m_message = new osc::ReceivedMessage(m); 
+   m_newMessageFlag = true;
+   m_mutex.unlock();
 }

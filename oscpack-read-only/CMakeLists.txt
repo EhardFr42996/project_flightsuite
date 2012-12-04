@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.6)
-PROJECT(TestOSC)
+PROJECT(TestMyOSCListener)
 
 INCLUDE_DIRECTORIES(${CMAKE_SOURCE_DIR})
 
@@ -24,21 +24,15 @@ osc/OscOutboundPacketStream.cpp
 )
 
 IF(WIN32)
- ADD_EXECUTABLE(OscDump examples/OscDump.cpp)
- TARGET_LINK_LIBRARIES(OscDump OSC Ws2_32 winmm)
+ ADD_EXECUTABLE(ListenerTest examples/main.cpp examples/OSCListener.cpp)
+ TARGET_LINK_LIBRARIES(ListenerTest OSC Ws2_32 winmm)
 
- ADD_EXECUTABLE(SimpleReceive examples/SimpleReceive.cpp)
- TARGET_LINK_LIBRARIES(SimpleReceive OSC Ws2_32 winmm)
-
- ADD_EXECUTABLE(SimpleSend examples/SimpleSend.cpp)
- TARGET_LINK_LIBRARIES(SimpleSend OSC Ws2_32 winmm)
+ ADD_EXECUTABLE(MySend examples/SimpleSend.cpp)
+ TARGET_LINK_LIBRARIES(MySend OSC Ws2_32 winmm)
 ELSE(WIN32)
- ADD_EXECUTABLE(OscDump examples/OscDump.cpp)
- TARGET_LINK_LIBRARIES(OscDump OSC)
+ ADD_EXECUTABLE(ListenerTest examples/main.cpp examples/OSCListener.cpp)
+ TARGET_LINK_LIBRARIES(ListenerTest OSC)
 
- ADD_EXECUTABLE(SimpleReceive examples/SimpleReceive.cpp)
- TARGET_LINK_LIBRARIES(SimpleReceive OSC)
-
- ADD_EXECUTABLE(SimpleSend examples/SimpleSend.cpp)
- TARGET_LINK_LIBRARIES(SimpleSend OSC)
+ ADD_EXECUTABLE(MySend examples/SimpleSend.cpp)
+ TARGET_LINK_LIBRARIES(MySend OSC)
 ENDIF(WIN32)
