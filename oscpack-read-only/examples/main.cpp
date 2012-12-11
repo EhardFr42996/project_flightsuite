@@ -19,16 +19,22 @@ int main(int argc, char* argv[])
 
       listener = BlenderOSCPacketListener::getInstance();
 
-      if (listener->requestNewMessage())
-      {
-         const osc::ReceivedMessage *m = listener->getMessage();
-         osc::ReceivedMessage::const_iterator arg = m->ArgumentsBegin();
-         int a1 = (arg++)->AsInt32();
-         if( arg != m->ArgumentsEnd() )
-            throw osc::ExcessArgumentException();
+         if (listener->requestNewMessage())
+         {
+            try{
+               const osc::ReceivedMessage *m = listener->getMessage();
+               if( std::strcmp( m->AddressPattern(), "/color" ) == 0 ){
+                  osc::ReceivedMessage::const_iterator arg = m->ArgumentsBegin();
+                  int a1 = (arg++)->AsInt32();
+                  if( arg != m->ArgumentsEnd() )
+                     throw osc::ExcessArgumentException();
 
-         std::cout << "asked for message and got: " << a1 << "\n";
-      }
+                  std::cout << "asked for message and got: " << a1 << "\n";
+               }
+            }catch( osc::Exception& e ){
+               std::cout << "error while parsing message: " << e.what() << "\n";
+            }
+         }
       boost::this_thread::sleep(sleepTime);
    }
 

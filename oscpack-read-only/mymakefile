@@ -5,8 +5,8 @@
 ENDIANESS=OSC_HOST_LITTLE_ENDIAN
 
 CXX = g++
-INCLUDES = -I/opt/local/include -I./
-LIBS = -L/opt/local/lib -lboost_thread-mt
+INCLUDES = -I/opt/local/include -I/usr/local/include/oscpack
+LIBS = -L/opt/local/lib -lboost_thread-mt -L/usr/local/lib -loscpack
 COPTS  = -Wall -O3
 CDEBUG = -Wall -g 
 CXXFLAGS = $(COPTS) $(INCLUDES) -D$(ENDIANESS)
@@ -24,18 +24,19 @@ LIBSONAME = $(LIBNAME).so
 LIBFILENAME = $(LIBSONAME).1.0.2
 
 #Test and example source
-SENDSOURCES = ./examples/SimpleSend.cpp ./osc/OscOutboundPacketStream.cpp ./osc/OscTypes.cpp ./ip/posix/NetworkingUtils.cpp ./ip/posix/UdpSocket.cpp ./ip/IpEndpointName.cpp
+#SENDSOURCES = ./examples/SimpleSend.cpp ./osc/OscOutboundPacketStream.cpp ./osc/OscTypes.cpp ./ip/posix/NetworkingUtils.cpp ./ip/posix/UdpSocket.cpp ./ip/IpEndpointName.cpp
+SENDSOURCES = ./examples/SimpleSend.cpp 
 SENDOBJECTS = $(SENDSOURCES:.cpp=.o)
 
 GETSOURCES = \
 ./examples/main.cpp \
-./examples/OSCListener.cpp \
-./osc/OscOutboundPacketStream.cpp \
-./osc/OscTypes.cpp \
-./osc/OscReceivedElements.cpp \
-./ip/posix/NetworkingUtils.cpp \
-./ip/posix/UdpSocket.cpp \
-./ip/IpEndpointName.cpp 
+./examples/OSCListener.cpp 
+#./osc/OscOutboundPacketStream.cpp \
+#./osc/OscTypes.cpp \
+#./osc/OscReceivedElements.cpp \
+#./ip/posix/NetworkingUtils.cpp \
+#./ip/posix/UdpSocket.cpp \
+#./ip/IpEndpointName.cpp 
 GETOBJECTS = $(GETSOURCES:.cpp=.o)
 
 #Library sources
