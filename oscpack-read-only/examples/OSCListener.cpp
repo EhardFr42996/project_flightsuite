@@ -1,4 +1,4 @@
-#include "examples/OSCListener.h"
+#include "OSCListener.h"
 
 BlenderOSCPacketListener *BlenderOSCPacketListener::sm_instance = NULL;     
 
