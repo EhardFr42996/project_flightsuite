@@ -34,6 +34,7 @@ OS_NCASE:=$(shell uname -s | tr '[A-Z]' '[a-z]')
 # Source and Build DIR's
 BLENDER_DIR:=$(shell pwd -P)
 BUILD_TYPE:=Release
+BUILD_DIR:=~/build
 
 ifndef BUILD_CMAKE_ARGS
 	BUILD_CMAKE_ARGS:=
