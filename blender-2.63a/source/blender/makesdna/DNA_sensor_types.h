@@ -91,19 +91,19 @@ typedef struct bActuatorSensor {
 	char name[64];	/* MAX_NAME */
 } bActuatorSensor;
 
-typedef struct bMySensor {
-	short delay;
-	short duration;
-	short flag;
-	short pad;
-} bMySensor;
-
 typedef struct bDelaySensor {
 	short delay;
 	short duration;
 	short flag;
 	short pad;
 } bDelaySensor;
+
+typedef struct bMySensor {
+	short delay;
+	short duration;
+	short flag;
+	short pad;
+} bMySensor;
 
 typedef struct bCollisionSensor {
 	char name[64];          /* property name. MAX_NAME */

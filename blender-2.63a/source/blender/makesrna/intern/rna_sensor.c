@@ -46,11 +46,11 @@ EnumPropertyItem sensor_type_items[] = {
 	{SENS_ARMATURE, "ARMATURE", 0, "Armature", ""},
 	{SENS_COLLISION, "COLLISION", 0, "Collision", ""},
 	{SENS_DELAY, "DELAY", 0, "Delay", ""},
-	{SENS_MY, "MY", 0, "My", ""},
 	{SENS_JOYSTICK, "JOYSTICK", 0, "Joystick", ""},
 	{SENS_KEYBOARD, "KEYBOARD", 0, "Keyboard", ""},
 	{SENS_MESSAGE, "MESSAGE", 0, "Message", ""},
 	{SENS_MOUSE, "MOUSE", 0, "Mouse", ""},
+	{SENS_MY, "MY", 0, "My", ""},
 	{SENS_NEAR, "NEAR", 0, "Near", ""},
 	{SENS_PROPERTY, "PROPERTY", 0, "Property", ""},
 	{SENS_RADAR, "RADAR", 0, "Radar", ""},
@@ -169,6 +169,7 @@ EnumPropertyItem *rna_Sensor_type_itemf(bContext *C, PointerRNA *ptr, PropertyRN
 	RNA_enum_items_add_value(&item, &totitem, sensor_type_items, SENS_KEYBOARD);
 	RNA_enum_items_add_value(&item, &totitem, sensor_type_items, SENS_MESSAGE);
 	RNA_enum_items_add_value(&item, &totitem, sensor_type_items, SENS_MOUSE);
+	RNA_enum_items_add_value(&item, &totitem, sensor_type_items, SENS_MY);
 	RNA_enum_items_add_value(&item, &totitem, sensor_type_items, SENS_NEAR);
 	RNA_enum_items_add_value(&item, &totitem, sensor_type_items, SENS_PROPERTY);
 	RNA_enum_items_add_value(&item, &totitem, sensor_type_items, SENS_RADAR);
@@ -591,9 +592,9 @@ static void rna_def_my_sensor(BlenderRNA *brna)
 	RNA_def_struct_ui_text(srna, "My Sensor", "Sensor to send delayed events");
 	RNA_def_struct_sdna_from(srna, "bMySensor", "data");
 
-	prop = RNA_def_property(srna, "my", PROP_INT, PROP_NONE);
-	RNA_def_property_ui_text(prop, "My",
-	                         "Delay in number of logic tics before the positive trigger (default 60 per second)");
+	prop = RNA_def_property(srna, "delay", PROP_INT, PROP_NONE);
+	RNA_def_property_ui_text(prop, "Delay",
+	                         "dhfdshfkskksdhsdsdahasd");
 	RNA_def_property_range(prop, 0, 5000);
 	RNA_def_property_update(prop, NC_LOGIC, NULL);
 
