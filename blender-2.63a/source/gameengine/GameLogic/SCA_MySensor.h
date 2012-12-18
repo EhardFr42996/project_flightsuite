@@ -36,6 +36,7 @@
 #define __SCA_MYSENSOR_H__
 #include "SCA_ISensor.h"
 
+
 class SCA_MySensor : public SCA_ISensor
 {
 	Py_Header
