@@ -1,7 +1,0 @@
-digraph G
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir=LR;
-  Node1 [label="DISTANCE_PLANE_3D_FUNC",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/dd0/classDISTANCE__PLANE__3D__FUNC.html",tooltip="This function calcs the distance from a 3D plane."];
-}

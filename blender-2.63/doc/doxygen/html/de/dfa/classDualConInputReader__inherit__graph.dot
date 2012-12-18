@@ -1,8 +1,0 @@
-digraph G
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{DualConInputReader\n|- input_mesh\l- tottri\l- curface\l- offset\l- min\l- max\l- maxsize\l- scale\l|+ DualConInputReader()\l+ reset()\l+ getNextTriangle()\l+ getNextTriangle()\l+ getNumTriangles()\l+ getNumVertices()\l+ getBoundingBox()\l+ getNextVertex()\l+ printInfo()\l+ getMemory()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
-  Node2 [label="{ModelReader\n||+ ModelReader()\l+ getNextTriangle()\l+ getNextTriangle()\l+ getBoundingBox()\l+ getNumTriangles()\l+ getMemory()\l+ reset()\l+ getNumVertices()\l+ getNextVertex()\l+ printInfo()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d15/classModelReader.html"];
-}

@@ -1,7 +1,0 @@
-digraph G
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir=LR;
-  Node1 [label="GIM_BVH_DATA",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d09/structGIM__BVH__DATA.html",tooltip="GIM_BVH_DATA is an internal GIMPACT collision structure to contain axis aligned bounding box..."];
-}

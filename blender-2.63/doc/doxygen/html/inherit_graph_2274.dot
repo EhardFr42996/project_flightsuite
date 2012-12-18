@@ -1,7 +1,0 @@
-digraph G
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir=LR;
-  Node1 [label="Traits\< KDL::Vector \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/da0/structTraits_3_01KDL_1_1Vector_01_4.html"];
-}

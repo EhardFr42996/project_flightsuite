@@ -1,8 +1,0 @@
-digraph G
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{btDbvtBroadphase\n|+ m_sets\l+ m_stageRoots\l+ m_paircache\l+ m_prediction\l+ m_stageCurrent\l+ m_fupdates\l+ m_dupdates\l+ m_cupdates\l+ m_newpairs\l+ m_fixedleft\l+ m_updates_call\l+ m_updates_done\l+ m_updates_ratio\l+ m_pid\l+ m_cid\l+ m_gid\l+ m_releasepaircache\l+ m_deferedcollide\l+ m_needcleanup\l|+ btDbvtBroadphase()\l+ ~btDbvtBroadphase()\l+ collide()\l+ optimize()\l+ createProxy()\l+ destroyProxy()\l+ setAabb()\l+ rayTest()\l+ aabbTest()\l+ getAabb()\l+ calculateOverlappingPairs()\l+ getOverlappingPairCache()\l+ getOverlappingPairCache()\l+ getBroadphaseAabb()\l+ printStats()\l+ resetPool()\l+ performDeferredRemoval()\l+ setVelocityPrediction()\l+ getVelocityPrediction()\l+ setAabbForceUpdate()\l+ benchmark()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
-  Node2 [label="{btBroadphaseInterface\n||+ ~btBroadphaseInterface()\l+ createProxy()\l+ destroyProxy()\l+ setAabb()\l+ getAabb()\l+ rayTest()\l+ aabbTest()\l+ calculateOverlappingPairs()\l+ getOverlappingPairCache()\l+ getOverlappingPairCache()\l+ getBroadphaseAabb()\l+ resetPool()\l+ printStats()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/dfe/classbtBroadphaseInterface.html"];
-}

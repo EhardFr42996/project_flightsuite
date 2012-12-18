@@ -1,8 +1,0 @@
-digraph G
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{NG_LoopBackNetworkDeviceInterface\n|- m_messages\l- m_currentQueue\l|+ NG_LoopBackNetworkDeviceInterface()\l+ ~NG_LoopBackNetworkDeviceInterface()\l+ NextFrame()\l+ Connect()\l+ Disconnect()\l+ SendNetworkMessage()\l+ RetrieveNetworkMessages()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
-  Node2 [label="{NG_NetworkDeviceInterface\n|- m_online\l|+ NG_NetworkDeviceInterface()\l+ ~NG_NetworkDeviceInterface()\l+ NextFrame()\l+ Online()\l+ Offline()\l+ IsOnline()\l+ Connect()\l+ Disconnect()\l+ SendNetworkMessage()\l+ RetrieveNetworkMessages()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d8b/classNG__NetworkDeviceInterface.html"];
-}

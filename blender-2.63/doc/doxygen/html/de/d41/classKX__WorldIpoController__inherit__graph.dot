@@ -1,8 +1,0 @@
-digraph G
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{KX_WorldIpoController\n|+ m_mist_rgb\l+ m_mist_start\l+ m_mist_dist\l- m_interpolators\l- m_modify_mist_color\l- m_modify_mist_start\l- m_modify_mist_dist\l- m_modified\l- m_ipotime\l|+ KX_WorldIpoController()\l+ ~KX_WorldIpoController()\l+ GetReplica()\l+ Update()\l+ SetSimulatedTime()\l+ SetModifyMistStart()\l+ SetModifyMistColor()\l+ SetModifyMistDist()\l+ SetOption()\l+ AddInterpolator()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
-  Node2 [label="{SG_Controller\n|# m_pObject\l|+ SG_Controller()\l+ ~SG_Controller()\l+ Update()\l+ SetObject()\l+ ClearObject()\l+ SetSimulatedTime()\l+ GetReplica()\l+ SetOption()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d9e/classSG__Controller.html"];
-}

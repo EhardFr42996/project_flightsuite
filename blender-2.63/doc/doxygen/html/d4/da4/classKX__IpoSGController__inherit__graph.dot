@@ -1,8 +1,0 @@
-digraph G
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{KX_IpoSGController\n|- m_ipo_xform\l- m_interpolators\l- m_ipo_channels_active\l- m_ipo_as_force\l- m_ipo_add\l- m_ipo_local\l- m_modified\l- m_ipotime\l- m_ipo_start_point\l- m_ipo_start_orient\l- m_ipo_start_scale\l- m_ipo_start_initialized\l- m_ipo_start_euler\l- m_ipo_euler_initialized\l- m_game_object\l|+ KX_IpoSGController()\l+ ~KX_IpoSGController()\l+ GetReplica()\l+ SetOption()\l+ UpdateSumoReference()\l+ SetGameObject()\l+ SetIPOChannelActive()\l+ GetIPOTransform()\l+ AddInterpolator()\l+ Update()\l+ SetSimulatedTime()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-  Node2 -> Node1 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
-  Node2 [label="{SG_Controller\n|# m_pObject\l|+ SG_Controller()\l+ ~SG_Controller()\l+ Update()\l+ SetObject()\l+ ClearObject()\l+ SetSimulatedTime()\l+ GetReplica()\l+ SetOption()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d9e/classSG__Controller.html"];
-}

@@ -1,8 +1,0 @@
-digraph G
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{btContactSolverInfoData\n|+ m_tau\l+ m_damping\l+ m_friction\l+ m_timeStep\l+ m_restitution\l+ m_numIterations\l+ m_maxErrorReduction\l+ m_sor\l+ m_erp\l+ m_erp2\l+ m_globalCfm\l+ m_splitImpulse\l+ m_splitImpulsePenetrationThreshold\l+ m_linearSlop\l+ m_warmstartingFactor\l+ m_solverMode\l+ m_restingContactRestitutionThreshold\l+ m_minimumSolverBatchSize\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
-  Node2 [label="{btContactSolverInfo\n||+ btContactSolverInfo()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d51/structbtContactSolverInfo.html"];
-}

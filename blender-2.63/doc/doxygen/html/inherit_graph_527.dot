@@ -1,7 +1,0 @@
-digraph G
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir=LR;
-  Node1 [label="btMatrix3x3",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d7d/classbtMatrix3x3.html",tooltip="The btMatrix3x3 class implements a 3x3 rotation matrix, to perform linear algebra in combination with..."];
-}

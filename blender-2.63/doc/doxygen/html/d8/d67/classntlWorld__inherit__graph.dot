@@ -1,8 +1,0 @@
-digraph G
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{ntlWorld\n|# mpGlob\l# mpLightList\l# mpPropList\l# mpSims\l# mpOpenGLRenderer\l# mStopRenderVisualization\l# mThreadRunning\l# mSimulationTime\l# mFirstSim\l# mSingleStepDebug\l# mFrameCnt\l|+ ntlWorld()\l+ ntlWorld()\l+ ~ntlWorld()\l+ initDefaults()\l+ finishWorldInit()\l+ addDomain()\l+ renderAnimation()\l+ renderVisualization()\l+ singleStepVisualization()\l+ advanceSims()\l+ singleStepSims()\l+ setStopRenderVisualization()\l+ getStopRenderVisualization()\l+ renderScene()\l+ setSingleFrameOut()\l+ setRenderGlobals()\l+ getRenderGlobals()\l+ setSimulationTime()\l+ getSimulationTime()\l+ setSingleStepDebug()\l+ getSingleStepDebug()\l+ getSimulations()\l+ getOpenGLRenderer()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
-  Node2 [label="{ntlBlenderDumper\n||+ ntlBlenderDumper()\l+ ntlBlenderDumper()\l+ ~ntlBlenderDumper()\l+ renderScene()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d46/classntlBlenderDumper.html"];
-}

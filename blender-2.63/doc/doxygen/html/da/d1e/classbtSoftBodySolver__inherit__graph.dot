@@ -1,8 +1,0 @@
-digraph G
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{btSoftBodySolver\n|# m_numberOfPositionIterations\l# m_numberOfVelocityIterations\l# m_timeScale\l|+ btSoftBodySolver()\l+ ~btSoftBodySolver()\l+ getSolverType()\l+ checkInitialized()\l+ optimize()\l+ copyBackToSoftBodies()\l+ predictMotion()\l+ solveConstraints()\l+ updateSoftBodies()\l+ processCollision()\l+ processCollision()\l+ setNumberOfPositionIterations()\l+ getNumberOfPositionIterations()\l+ setNumberOfVelocityIterations()\l+ getNumberOfVelocityIterations()\l+ getTimeScale()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
-  Node2 [label="{btDefaultSoftBodySolver\n|# m_updateSolverConstants\l# m_softBodySet\l|+ btDefaultSoftBodySolver()\l+ ~btDefaultSoftBodySolver()\l+ getSolverType()\l+ checkInitialized()\l+ updateSoftBodies()\l+ optimize()\l+ copyBackToSoftBodies()\l+ solveConstraints()\l+ predictMotion()\l+ copySoftBodyToVertexBuffer()\l+ processCollision()\l+ processCollision()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/da0/classbtDefaultSoftBodySolver.html"];
-}

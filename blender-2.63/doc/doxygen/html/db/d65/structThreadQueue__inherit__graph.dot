@@ -1,8 +1,0 @@
-digraph G
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{ThreadQueue\< T \>\n|+ queue\l+ mutex\l+ cond\l+ nowait\l# queue\l# queue_mutex\l# done_mutex\l# queue_cond\l# done_cond\l# do_stop\l# do_cancel\l# tot\l# tot_done\l|+ ThreadQueue()\l+ push()\l+ wait_done()\l+ stop()\l+ cancel()\l+ worker_wait_pop()\l+ worker_done()\l+ worker_cancel()\l# clear()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-  Node1 -> Node2 [dir=back,color="orange",fontsize="10",style="dashed",label="\< DeviceTask \>",fontname="Helvetica"];
-  Node2 [label="{ThreadQueue\< DeviceTask \>\n|+ queue\l+ mutex\l+ cond\l+ nowait\l# queue\l# queue_mutex\l# done_mutex\l# queue_cond\l# done_cond\l# do_stop\l# do_cancel\l# tot\l# tot_done\l|+ ThreadQueue()\l+ push()\l+ wait_done()\l+ stop()\l+ cancel()\l+ worker_wait_pop()\l+ worker_done()\l+ worker_cancel()\l# clear()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/d0d/structThreadQueue.html"];
-}

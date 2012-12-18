@@ -1,8 +1,0 @@
-digraph G
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{AnimationImporterBase\n||}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
-  Node1 -> Node2 [dir=back,color="midnightblue",fontsize="10",style="solid",arrowtail="empty",fontname="Helvetica"];
-  Node2 [label="{AnimationImporter\n|- armature_importer\l- scene\l- curve_map\l- uid_animated_map\l- animlist_map\l- unused_curves\l- joint_objects\l- typeFlag\l|+ AnimationImporter()\l+ ~AnimationImporter()\l+ write_animation()\l+ write_animation_list()\l+ read_node_transform()\l+ translate_Animations()\l+ get_animation_type()\l+ apply_matrix_curves()\l+ add_bone_animation_sampled()\l+ Assign_transform_animations()\l+ Assign_color_animations()\l+ Assign_float_animations()\l+ setAnimType()\l+ modify_fcurve()\l+ translate_animation_OLD()\l+ find_frames()\l+ find_frames_old()\l+ evaluate_transform_at_frame()\l+ evaluate_animation()\l+ get_joint_rest_mat()\l+ calc_joint_parent_mat_rest()\l+ add_bone_fcurve()\l+ add_bezt()\l+ extra_data_importer()\l- create_fcurve()\l- create_bezt()\l- animation_to_fcurves()\l- fcurve_deg_to_rad()\l- add_fcurves_to_object()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d08/classAnimationImporter.html"];
-}
